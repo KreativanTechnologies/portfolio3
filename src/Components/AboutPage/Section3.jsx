@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Section3 = () => {
+  const [showAll, setShowAll] = useState(false);
+
   const data = [
     {
       img: 'images/sec3img.png',
@@ -35,7 +37,32 @@ const Section3 = () => {
         { icon: 'images/villa.png', para: 'Villa' },
       ],
     },
+    {
+      img: 'images/sec3img.png',
+      head: 'Modern Urban Loft',
+      desc: 'A sleek 1-bedroom loft apartment with smart home features and urban vibes...',
+      price: '$420,000',
+      list: [
+        { icon: 'images/bed.png', para: '1-Bedroom' },
+        { icon: 'images/bath.png', para: '1-Bathroom' },
+        { icon: 'images/villa.png', para: 'villa' },
+      ],
+    },
+    {
+      img: 'images/sec3img2.png',
+      head: 'Countryside Farmhouse',
+      desc: 'A spacious 5-bedroom farmhouse with open fields and natural serenity...',
+      price: '$850,000',
+      list: [
+        { icon: 'images/bed.png', para: '5-Bedroom' },
+        { icon: 'images/bath.png', para: '4-Bathroom' },
+        { icon: 'images/villa.png', para: 'villa' },
+      ],
+    },
   ];
+
+
+  const handleToggle = () => setShowAll(!showAll);
 
   return (
     <div className="bg-[#1A1A1A] text-white py-12">
@@ -49,16 +76,22 @@ const Section3 = () => {
               Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional
               homes and investments available through Estatein. Click "View Details" for more information.
             </p>
-            <button className="bg-[#262626] px-6 py-3 border border-gray-700 rounded-lg hover:bg-[#333] transition">
-              View All Properties
+            <button
+              onClick={handleToggle}
+              className="bg-[#262626] px-6 py-3 border border-gray-700 rounded-lg hover:bg-[#333] transition"
+            >
+              {showAll ? 'Show Less' : 'View All Properties'}
             </button>
           </div>
         </div>
 
         {/* Cards Grid */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {data.map((item, index) => (
-            <div key={index} className="border border-gray-700 p-4 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+          {(showAll ? data : data.slice(0, 3)).map((item, index) => (
+            <div
+              key={index}
+              className="border border-gray-700 p-4 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition hover:-translate-y-2 duration-300"
+            >
               <img src={item.img} alt={item.head} className="w-full h-56 object-cover rounded-lg" />
               <div className="p-5">
                 <h4 className="text-xl font-semibold mb-2">{item.head}</h4>

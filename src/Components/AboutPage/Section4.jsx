@@ -144,7 +144,7 @@ const Section4 = () => {
             <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 responsivewidth mt-20'>
                 {
                     data.map((items, index) => (
-                        <div key={index} className='bg-[#0F0F0F] flex flex-col items-center p-3 text-white space-y-5 rounded-2xl'>
+                        <div key={index} className='bg-[#0F0F0F] flex flex-col items-center p-3 text-white space-y-5 rounded-2xl hover:-translate-y-1 duration-300'>
                             <img src={items.img} alt="" className='mt-5' />
                             <h5 className='font-bold'>{items.head}</h5>
                             <p className="bg-gradient-to-l from-black to-transparent p-3 text-white rounded-full border border-gray-700 text-sm">
@@ -156,7 +156,7 @@ const Section4 = () => {
                             <div className='flex flex-wrap gap-2'>
                                 {items.list.map((elem, index) => (
                                     <div key={index}>
-                                        <img src={elem.icon} alt="" width={50} />
+                                        <img src={elem.icon} alt="" width={50} className='cursor-pointer hover:-translate-y-1 duration-300'/>
 
                                     </div>
                                 ))}

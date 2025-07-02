@@ -29,7 +29,7 @@ const Navbar = () => {
     };
   }, []);
 
-  const whiteTextPaths = ['/about', '/visions'];
+  const whiteTextPaths = ['/about','/visions' ];
   const isWhiteText = whiteTextPaths.includes(location.pathname);
   const menuIconColor = isWhiteText ? 'text-white' : 'text-black';
 
@@ -47,8 +47,8 @@ const Navbar = () => {
                   `hover:scale-105 duration-300 font-semibold ${
                     isActive
                       ? isWhiteText
-                        ? 'text-white underline'
-                        : 'text-black underline'
+                        ? 'text-[#7C38EB] underline'
+                        : 'text-[#7C38EB] underline'
                       : ''
                   }`
                 }

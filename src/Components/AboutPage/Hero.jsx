@@ -17,10 +17,10 @@ const Hero = () => {
     <div className="bg-[#1A1A1A] min-h-screen flex flex-col md:flex-row">
       {/* Left Side */}
       <div className="w-full md:w-1/2 flex flex-col justify-center text-white px-6 sm:px-10 md:px-16 py-16 text-center md:text-left">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+        <h1 className="text-2xl sm:text-4xl font-bold mb-6 leading-tight">
           Discover Your Dream Property with Estatein
         </h1>
-        <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed max-w-lg mx-auto md:mx-0">
+        <p className="text-sm text-gray-300 leading-relaxed max-w-lg mx-auto md:mx-0">
           Your journey to finding the perfect property begins here. Explore our listings to find the home that matches
           your dreams.
         </p>
@@ -96,7 +96,7 @@ const Hero = () => {
         </div>
 
         {/* Hero Image */}
-        <div className="relative z-10 h-full flex items-center justify-center p-4 sm:p-8">
+        <div className="relative z-10 h-full flex items-center justify-center p-4 sm:p-8 ">
           <img
             src="/images/aboutimg.png"
             alt="Dream Property"
