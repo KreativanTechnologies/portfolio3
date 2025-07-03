@@ -14,22 +14,22 @@ const Hero = () => {
         },
     ]
   return (
-    <div className="bg-[#1A1A1A] min-h-screen flex flex-col md:flex-row">
+    <div className="bg-[#1A1A1A] min-h-screen flex flex-col lg:flex-row">
       {/* Left Side */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center text-white px-6 sm:px-10 md:px-16 py-16 text-center md:text-left">
-        <h1 className="text-2xl sm:text-4xl font-bold mb-6 leading-tight">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center text-white px-6 sm:px-10 md:px-16 py-20 text-center lg:text-left">
+        <h1 className="text-[5.5vw] sm:text-[4vw] md:text-[3.5vw] font-bold mb-6 leading-tight">
           Discover Your Dream Property with Estatein
         </h1>
-        <p className="text-sm text-gray-300 leading-relaxed max-w-lg mx-auto md:mx-0">
+        <p className="text-sm text-gray-300 leading-relaxed max-w-lg mx-auto lg:mx-0">
           Your journey to finding the perfect property begins here. Explore our listings to find the home that matches
           your dreams.
         </p>
 
-        <div className="flex :flex-row justify-center md:justify-start gap-4 mt-8">
-          <button className="border border-white px-5 py-3 rounded-lg hover:bg-white hover:text-black transition duration-300">
+        <div className="flex :flex-row justify-center lg:justify-start gap-4 mt-8">
+          <button className="text-xs md:text-sm border border-white px-5 py-3 rounded-lg hover:bg-white hover:text-black transition duration-300">
             Learn More
           </button>
-          <button className="px-5 py-3 bg-[#703BF7] rounded-lg hover:bg-[#5a2fd3] transition duration-300">
+          <button className="text-xs md:text-sm px-5 py-3 bg-[#703BF7] rounded-lg hover:bg-[#5a2fd3] transition duration-300">
             Browse Properties
           </button>
         </div>
@@ -38,8 +38,8 @@ const Hero = () => {
             {
                 data.map((items,index)=>(
                     <div key={index} className="bg-[#262626] p-3 rounded-lg">
-                        <h3 className="font-bold text-2xl">{items.count}</h3>
-                        <p className="text-[#999999]">{items.para}</p>
+                        <h3 className="font-bold text-xl sm:text-2xl">{items.count}</h3>
+                        <p className="text-[#999999] text-xs">{items.para}</p>
                     </div>
                 ))
             }
@@ -48,7 +48,7 @@ const Hero = () => {
       </div>
 
       {/* Right Side */}
-      <div className="w-full md:w-1/2 relative overflow-hidden h-[300px] sm:h-[400px] md:h-auto">
+      <div className="w-full lg:w-1/2 relative overflow-hidden h-[300px] sm:h-[400px] md:h-auto">
         {/* Diagonal lines pattern */}
         <div className="absolute inset-0 opacity-20">
           <svg className="w-full h-full" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <div className="relative z-50">
       {/* Navbar */}
-      <nav className={`absolute w-full z-50 flex justify-end items-center p-5 lg:px-10 ${isWhiteText ? 'text-white' : 'text-black'}`}>
+      <nav className={`absolute w-full z-50 flex justify-end items-center p-5 lg:px-10 ${isWhiteText ? 'text-gray-400' : 'text-black'}`}>
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-16">
           {links.map((link) => (

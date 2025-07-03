@@ -25,7 +25,7 @@ const Section3 = () => {
   ];
 
   return (
-    <div className="w-full px-4 md:px-10 py-16 ">
+    <div className="w-full px-4 md:px-10 py-10 ">
       
         <img src="images/star.png" alt="star" className='mb-10' />
       

@@ -30,7 +30,7 @@ const Section2 = () => {
   ]
 
   return (
-    <div className=" min-h-screen py-16 px-4">
+    <div className=" min-h-screen py-10 px-4">
       <div className="flex justify-center mb-16">
         <div className="text-white max-w-4xl px-5 md:px-5">
           <h1 className="text-center text-2xl md:text-4xl font-bold mb-5">
